@@ -1,0 +1,13 @@
+---
+description: UI, shadcn/ui и Tailwind в VisaGuide
+globs: components/**/*.tsx,app/**/*.tsx
+alwaysApply: false
+---
+
+# UI & Styling
+
+- Примитивы в `components/ui/` — PascalCase
+- Primary: blue (`blue-600`, `#2563eb`)
+- `cn()` из `@/lib/utils`
+- `lucide-react` для иконок
+- `MainLoader` для full-page loading

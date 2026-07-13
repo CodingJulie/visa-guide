@@ -1,0 +1,12 @@
+---
+description: Тестирование Vitest + Testing Library
+globs: "**/*.{test.ts,test.tsx,test.js}"
+alwaysApply: false
+---
+
+# Testing
+
+Co-located: `Component.test.tsx` рядом с `Component.tsx`.
+Страницы: `app/**/page.test.tsx`. Middleware: `middleware.test.ts` в корне.
+
+`npm run test` · `npm run test:ci` · `npm run test:coverage`

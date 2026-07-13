@@ -1,0 +1,308 @@
+{
+  "sections": {
+    "goal": {
+      "title": "Your Goal",
+      "subtitle": "Choose the purpose that best matches your trip. Categories follow the U.S. Department of State visa directory (travel.state.gov)."
+    },
+    "citizenship": {
+      "title": "Citizenship & Status",
+      "subtitle": "Some visas (TN, E-3, BCC, H-1B1) depend on nationality or current U.S. status."
+    },
+    "personal": {
+      "title": "Personal Information"
+    },
+    "residence": {
+      "title": "Residence & Destination"
+    },
+    "employment": {
+      "title": "Employment",
+      "subtitle": "Most work visas require a U.S. employer petition (USCIS Form I-129 or equivalent) before consular interview."
+    },
+    "education": {
+      "title": "Education & Exchange",
+      "subtitle": "Student and exchange visas require SEVIS approval (Form I-20 or DS-2019) before applying."
+    },
+    "health": {
+      "title": "Health",
+      "subtitle": "Medical inadmissibility may apply; a civil surgeon exam (Form I-693) is required for immigrant visas."
+    },
+    "humanitarian": {
+      "title": "Humanitarian Protection",
+      "subtitle": "Asylum, U, and T statuses have strict eligibility and often require legal counsel (USCIS / EOIR)."
+    },
+    "history": {
+      "title": "Visa & Immigration History",
+      "subtitle": "Prior denials, overstays, or deportation can affect eligibility and may trigger entry bars (INA §212)."
+    },
+    "finance": {
+      "title": "Finances",
+      "subtitle": "Visitor visas (B-1/B-2) require proof you can fund the trip without unauthorized work (INA §214(b))."
+    }
+  },
+  "questions": {
+    "visa_goal": {
+      "label": "What is your main purpose for traveling to the United States?",
+      "help": "Based on travel.state.gov visa categories. Choose the closest match — you can refine details in later sections."
+    },
+    "investment_type": {
+      "label": "What type of investment or trade activity?",
+      "help": "E-1/E-2 require a treaty of commerce with the U.S.; citizenship must be from a treaty country."
+    },
+    "eb_immigrant_category": {
+      "label": "Which employment-based immigrant category applies?",
+      "help": "Most EB categories require an approved I-140 petition; EB-2/EB-3 usually need PERM labor certification."
+    },
+    "dv_lottery_selected": {
+      "label": "Were you selected in the Diversity Visa (DV) lottery for the current fiscal year?",
+      "help": "Selection alone does not guarantee a visa — you must still meet education/work requirements and pass interview."
+    },
+    "had_permanent_residence": {
+      "label": "Did you previously hold U.S. lawful permanent resident (green card) status?",
+      "help": "SB-1 returning resident visa is for those who abandoned LPR status and wish to return without a new immigrant petition."
+    },
+    "us_citizen_fiance": {
+      "label": "Are you engaged to a U.S. citizen (K-1 fiancé(e) visa)?",
+      "help": "K-1 requires an approved I-129F petition; you must marry within 90 days of U.S. entry."
+    },
+    "us_citizen_spouse": {
+      "label": "Are you already married to a U.S. citizen (IR/CR immigrant visa)?",
+      "help": "Spouses of U.S. citizens apply for IR1/CR1 immigrant visas after an approved I-130 petition."
+    },
+    "lpr_family_relationship": {
+      "label": "What is your relationship to the lawful permanent resident?",
+      "help": "F2A (spouse/minor child) and F2B (adult unmarried child) have different wait times per Visa Bulletin."
+    },
+    "citizenship": {
+      "label": "Country of citizenship (passport issuing country)",
+      "help": "Use the country name as on your passport. Required for TN (Canada/Mexico), E-3 (Australia), BCC (Mexico), H-1B1 (Chile/Singapore)."
+    },
+    "dual_citizenship": {
+      "label": "Do you hold citizenship of more than one country?"
+    },
+    "second_citizenship": {
+      "label": "Second country of citizenship"
+    },
+    "current_us_status": {
+      "label": "Current immigration status in the United States",
+      "help": "If you are already in the U.S., some applications (adjustment of status, change of status) may be filed with USCIS instead of a consulate."
+    },
+    "full_name": {
+      "label": "Full legal name (as in passport)"
+    },
+    "date_of_birth": {
+      "label": "Date of birth"
+    },
+    "marital_status": {
+      "label": "Marital status"
+    },
+    "has_dependents": {
+      "label": "Will dependents (spouse/children) apply with you?"
+    },
+    "dependents_count": {
+      "label": "Number of dependents applying"
+    },
+    "residence_country": {
+      "label": "Country where you currently live",
+      "help": "You generally apply at the U.S. embassy or consulate in your country of residence."
+    },
+    "planned_us_state": {
+      "label": "Planned U.S. state (if known)"
+    },
+    "planned_us_city": {
+      "label": "Planned U.S. city (if known)"
+    },
+    "employment_status": {
+      "label": "Current employment status"
+    },
+    "has_us_job_offer": {
+      "label": "Do you have a written job offer from a U.S. employer?",
+      "help": "H-1B, L-1, O-1, and most work visas require the employer to file a petition before your visa interview."
+    },
+    "job_requires_degree": {
+      "label": "Does the position require at least a bachelor's degree in a specific specialty (H-1B specialty occupation)?"
+    },
+    "intracompany_transfer": {
+      "label": "Is this an intracompany transfer (L-1) — same employer, foreign office 1+ year?",
+      "help": "L-1A (manager/executive) or L-1B (specialized knowledge) requires qualifying relationship between entities."
+    },
+    "l1_qualifying_employment": {
+      "label": "Have you worked for the foreign affiliate at least 1 continuous year in the last 3 years?",
+      "help": "Required for L-1 eligibility per USCIS — managerial, executive, or specialized knowledge role."
+    },
+    "extraordinary_ability": {
+      "label": "Do you have sustained national or international acclaim in your field (O-1)?",
+      "help": "O-1 requires evidence such as awards, publications, high salary, or leading role in distinguished organizations."
+    },
+    "has_university_degree": {
+      "label": "Do you hold a university degree (bachelor's or higher)?",
+      "help": "Required for H-1B, E-3, TN (most professions), and many EB categories."
+    },
+    "degree_evaluated": {
+      "label": "Have you completed a U.S. credential evaluation (NACES member)?",
+      "help": "Foreign degrees usually need evaluation (WES, ECE, etc.) to show U.S. equivalency."
+    },
+    "study_program_type": {
+      "label": "What type of U.S. study or exchange program?"
+    },
+    "has_i20": {
+      "label": "Do you have a signed Form I-20 from a SEVP-certified school?",
+      "help": "F-1 and M-1 require I-20; pay the I-901 SEVIS fee before your visa interview."
+    },
+    "has_ds2019": {
+      "label": "Do you have Form DS-2019 from a designated J-1 program sponsor?",
+      "help": "J-1 exchange visitors need DS-2019; some categories have a two-year home residency requirement."
+    },
+    "humanitarian_basis": {
+      "label": "Which type of humanitarian protection are you seeking?"
+    },
+    "life_threat": {
+      "label": "Is your life or freedom threatened in your country of nationality?"
+    },
+    "persecution": {
+      "label": "Do you fear persecution based on race, religion, nationality, political opinion, or particular social group?",
+      "help": "Protected grounds under INA §101(a)(42)(A) for asylum and withholding of removal."
+    },
+    "gender_violence": {
+      "label": "Are you a victim of domestic violence, sexual assault, or similar qualifying crime?"
+    },
+    "crime_victim": {
+      "label": "Were you a victim of a qualifying criminal activity in the U.S.?",
+      "help": "U visa covers specific crimes listed in INA §101(a)(15)(U)(iii); must have suffered substantial abuse."
+    },
+    "crime_victim_cooperation": {
+      "label": "Have you been helpful or likely to be helpful to law enforcement in investigating or prosecuting the crime?",
+      "help": "Certification on Form I-918 Supplement B from a qualifying agency is required for U visa."
+    },
+    "trafficking_victim": {
+      "label": "Are you a victim of a severe form of human trafficking?",
+      "help": "T visa requires compliance with reasonable law enforcement requests unless under 18 or traumatized."
+    },
+    "deportation_risk": {
+      "label": "Are you currently in removal proceedings or at risk of deportation from the U.S.?"
+    },
+    "chronic_conditions": {
+      "label": "Do you have chronic health conditions requiring ongoing treatment?",
+      "help": "Certain communicable diseases or conditions without proof of treatment may affect admissibility (INA §212(a)(1))."
+    },
+    "disability": {
+      "label": "Do you have a physical or mental disability?",
+      "help": "Disability alone is not a bar; public charge and medical inadmissibility rules may still apply."
+    },
+    "prior_visa_denial": {
+      "label": "Have you ever been refused a U.S. visa or admission at a port of entry?",
+      "help": "Be prepared to explain what changed since the prior refusal at your interview."
+    },
+    "prior_overstay": {
+      "label": "Have you ever remained in the U.S. beyond your authorized stay?",
+      "help": "Overstays of 180+ days may trigger 3- or 10-year reentry bars (INA §212(a)(9)(B))."
+    },
+    "overstay_days": {
+      "label": "Approximate overstay duration (days)"
+    },
+    "prior_deportation": {
+      "label": "Have you ever been deported or removed from the United States?",
+      "help": "Prior removal may require a waiver (I-212) before reapplying for most visas."
+    },
+    "financial_sponsor": {
+      "label": "Who will primarily fund your U.S. stay?"
+    },
+    "annual_income_usd": {
+      "label": "Your approximate annual income (USD, optional)",
+      "help": "Consular officers assess whether you can afford the trip without unauthorized employment (especially B-1/B-2)."
+    }
+  },
+  "options": {
+    "current_us_status": {
+      "none": "Not currently in the U.S.",
+      "visitor": "B-1/B-2 visitor or Visa Waiver",
+      "student": "F-1, M-1, or J-1 student/exchange",
+      "worker": "Temporary worker (H, L, O, etc.)",
+      "permanent_resident": "Lawful permanent resident (green card)",
+      "other": "Other / pending application"
+    },
+    "marital_status": {
+      "single": "Single / never married",
+      "married": "Married",
+      "divorced": "Divorced",
+      "widowed": "Widowed"
+    },
+    "employment_status": {
+      "employed": "Employed full-time",
+      "job_search": "Actively seeking U.S. employment",
+      "self_employed": "Self-employed / business owner",
+      "unemployed": "Unemployed",
+      "student": "Student"
+    },
+    "financial_sponsor": {
+      "self": "Myself — personal savings/income",
+      "family": "Family member (U.S. or abroad)",
+      "employer": "U.S. employer or sponsor organization",
+      "other_sponsor": "Other sponsor (university, host, etc.)",
+      "none": "Not yet determined"
+    },
+    "visa_goal": {
+      "tourism": "Tourism / vacation — B-2 visitor",
+      "business_visit": "Business visit (no U.S. employment) — B-1",
+      "medical": "Medical treatment — B-2",
+      "transit": "Transit through the U.S. — C-1/C-2",
+      "work_has_offer": "Work — U.S. employer sponsor (H-1B, L-1, O-1, TN, E-3)",
+      "work_seeking_h1b": "Work — preparing for H-1B (specialty occupation, no offer yet)",
+      "work_seeking": "Work — preparing for H-1B (general, no offer yet)",
+      "work_seeking_l1": "Work — preparing for L-1 (intracompany transfer)",
+      "work_seeking_o1": "Work — preparing for O-1 (extraordinary ability)",
+      "work_seeking_tn": "Work — preparing for TN/TD (USMCA professional)",
+      "usmca_professional": "Work — TN/TD USMCA (Canada or Mexico citizen)",
+      "work_seeking_e3": "Work — preparing for E-3 (Australian specialty worker)",
+      "australian_professional": "Work — E-3 (Australian citizen, specialty occupation)",
+      "work_seasonal_ag": "Seasonal agricultural work — H-2A (DOL + USCIS petition)",
+      "work_seasonal_temp": "Temporary non-ag work — H-2B (DOL + USCIS petition)",
+      "work_training": "Training program (not for employment) — H-3",
+      "cnmi_worker": "CNMI transitional worker — CW-1",
+      "performing_artist": "Performing athlete, artist, entertainer — P visa",
+      "religious_worker": "Religious worker — R visa",
+      "study": "Study — F-1 (academic) or M-1 (vocational)",
+      "cultural_exchange": "International cultural exchange — Q visa",
+      "media_journalist": "Foreign media / journalist — I visa",
+      "family": "Family — U.S. citizen fiancé(e) K-1 or spouse IR/CR",
+      "family_lpr": "Family — lawful permanent resident (V, F2A/F2B)",
+      "adoption": "Intercountry adoption — IR3, IH3, IR4, IH4",
+      "investment": "Treaty trader/investor — E-1 / E-2 (or EB-5 immigrant)",
+      "immigrant_employment": "Employment-based green card — EB-1 through EB-5",
+      "dv_lottery": "Diversity Visa lottery — DV program",
+      "returning_resident": "Returning former permanent resident — SB-1",
+      "diplomat_official": "Diplomat or foreign government official — A visa",
+      "international_org": "International organization / NATO — G visa",
+      "crewmember": "Airline / sea crewmember — D visa",
+      "border_crossing": "Border Crossing Card — Mexico (BCC / laser visa)",
+      "humanitarian": "Humanitarian protection — Asylum, U, T, or TPS"
+    },
+    "study_program_type": {
+      "academic": "Academic program (university, college) — F-1",
+      "vocational": "Vocational / technical school — M-1",
+      "exchange": "Exchange visitor program — J-1"
+    },
+    "investment_type": {
+      "treaty_trader": "Substantial trade with the U.S. — E-1 treaty trader",
+      "treaty_investor": "Substantial investment in U.S. business — E-2 treaty investor",
+      "eb5_immigrant": "Immigrant investor green card — EB-5"
+    },
+    "eb_immigrant_category": {
+      "eb1": "EB-1 — priority workers (extraordinary ability, outstanding professors, multinational managers)",
+      "eb2": "EB-2 — advanced degree or exceptional ability (PERM or NIW)",
+      "eb3": "EB-3 — skilled workers, professionals, other workers (PERM required)",
+      "eb5": "EB-5 — immigrant investor ($800K+ in targeted area)"
+    },
+    "humanitarian_basis": {
+      "asylum": "Asylum — fear of persecution in home country",
+      "u_visa": "U visa — victim of qualifying crime who assisted law enforcement",
+      "t_visa": "T visa — victim of human trafficking",
+      "tps": "TPS — temporary protected status (designated country)"
+    },
+    "lpr_family_relationship": {
+      "spouse": "Spouse of lawful permanent resident",
+      "unmarried_child": "Unmarried child under 21",
+      "adult_child": "Unmarried son or daughter 21 or older (F2B)",
+      "other": "Other qualifying relative"
+    }
+  }
+}

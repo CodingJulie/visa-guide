@@ -1,0 +1,29 @@
+---
+description: Паттерны Next.js App Router в VisaGuide (client-first, PWA)
+globs: app/**/*.{ts,tsx},components/**/*.{ts,tsx}
+alwaysApply: false
+---
+
+# Next.js App Router
+
+Проект **client-first**: большинство страниц и компонентов с `'use client'`.
+
+## Client Components
+
+Добавляй `'use client'` когда нужны хуки, обработчики событий или browser API.
+Root `app/layout.tsx` — Server Component; провайдеры в `app/providers.tsx`.
+Оболочка приложения — `components/ui/AppShell.tsx`.
+
+## Данные
+
+- CRUD через `@/lib/supabase` в клиентских компонентах и хуках
+- API routes: `app/api/explain/route.ts`, `app/api/recommend/route.ts` (Gemini, server-only key)
+
+## Auth в middleware
+
+`middleware.ts` защищает `/dashboard`, `/questionnaire`, `/results`, `/checklist`, `/admin`, `/update-password`.
+
+## PWA
+
+Manifest: `app/manifest.json`. Service worker: `public/sw.js`.
+Регистрация — `components/workers/ServiceWorkerRegister.tsx`.

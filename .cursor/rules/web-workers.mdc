@@ -1,0 +1,11 @@
+---
+description: Service Worker и PWA
+globs: public/sw.js,components/workers/**/*.{ts,tsx}
+alwaysApply: false
+---
+
+# PWA & Service Worker
+
+- `public/sw.js` — service worker
+- `app/manifest.json` — Web App Manifest
+- `components/workers/ServiceWorkerRegister.tsx` — регистрация SW

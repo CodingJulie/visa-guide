@@ -1,0 +1,21 @@
+---
+description: Локализация en/ru через i18next
+globs: app/**/*.{tsx,ts},components/**/*.{tsx,ts},public/locales/**/*.json,lib/i18n.js
+alwaysApply: false
+---
+
+# i18n
+
+Client-side i18next, **без** locale-префиксов в URL (middleware редиректит `/en`, `/ru` на корень).
+
+## Использование
+
+```tsx
+import { useTranslation } from 'react-i18next';
+const { t, i18n } = useTranslation('common');
+```
+
+## Добавление строк
+
+Ключ в **snake_case** — в `public/locales/en/common.json` и `public/locales/ru/common.json`.
+Namespace всегда `common`.

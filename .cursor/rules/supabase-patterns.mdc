@@ -1,0 +1,28 @@
+---
+description: Supabase auth и работа с данными в VisaGuide
+globs: lib/**/*.ts,hooks/**/*.ts,middleware.ts,app/**/*.{ts,tsx}
+alwaysApply: false
+---
+
+# Supabase
+
+## Клиент
+
+```typescript
+import { supabase } from '@/lib/supabase';
+```
+
+Env: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`.
+
+## Auth
+
+- `getUser()` в middleware и на клиенте
+- Callback: `app/auth/callback/route.ts`
+
+## Миграции
+
+Именование: `supabase/migrations/YYYYMMDD_description.sql`
+
+## AI
+
+`GEMINI_API_KEY` — только на сервере в API routes.

@@ -1,0 +1,41 @@
+---
+description: VisaGuide — обзор проекта, стек и структура каталогов
+alwaysApply: true
+---
+
+# VisaGuide — Core
+
+PWA для пошагового сопровождения по визам США: анкета, рекомендации, гайды, чеклисты.
+
+## Стек
+
+- Next.js 15 App Router + React 19 + TypeScript (strict)
+- Supabase Auth + PostgreSQL (клиентский доступ через `@/lib/supabase`)
+- Tailwind CSS + shadcn/ui (radix-nova), Framer Motion, react-hook-form + Zod
+- i18next (en/ru), Google Gemini (`/api/explain`, `/api/recommend`), Vitest + Testing Library
+- Service Worker (`public/sw.js`), `@react-pdf/renderer` для PDF
+
+## Структура
+
+```
+app/           — страницы, layout, providers, manifest.json, API routes
+components/    — ui/, admin/, archive/, checklist/, guide/, questionnaire/, results/, workers/, providers/
+hooks/         — useCaseProgress, useStories, useLegalUpdates
+lib/           — supabase.ts, utils.ts, i18n.js, eligibility-engine.ts
+public/locales — en/common.json, ru/common.json
+supabase/migrations — YYYYMMDD_description.sql
+```
+
+## Импорты и алиасы
+
+- Всегда `@/` (корень проекта)
+- UI: `@/components/ui/Button` (PascalCase файлы)
+- Утилиты: `cn()` из `@/lib/utils`
+
+## Не добавлять без запроса
+
+Zustand, Redux, next-i18next, Stripe, Server Actions, `@supabase/auth-helpers-nextjs`.
+
+## Команды
+
+`npm run dev` · `npm run test` · `npm run lint` · `npm run type-check`
